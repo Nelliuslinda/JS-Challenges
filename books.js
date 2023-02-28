@@ -20,12 +20,12 @@ class Book {
     }
 
     //function to get copies sold
-    sell(numSold){
+    sell(numSold = 1){
         return this.numCopies - numSold;
     }
 
     //function to get copies restocked
-    restock(numCopies){
+    restock(numCopies = 5){
         return numCopies + this.numCopies;
     }
   }
